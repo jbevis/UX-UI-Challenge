@@ -7,7 +7,6 @@ body {
 
 /* --- top section ---*/
 header {
-  border: solid 1px green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +16,6 @@ header {
 #top-right {
   display: flex;
   align-items: center;
-  border: 1px solid chartreuse;
   justify-content: space-between;
   width: 150px;
 }
@@ -38,7 +36,6 @@ header {
 
 .main-body {
   display: flex;
-  border: solid 1px #5aebad;
   justify-content: center;
   height: 90%;
 }
@@ -50,7 +47,6 @@ header {
   width: 60%;
   display: flex;
   flex-direction: column;
-  border: solid 1px red;
   justify-content: space-around;
   margin-right: 5%;
 }
@@ -80,20 +76,22 @@ header {
   background-color: #EEF5DB;
 }
 
+.start-ride {
+  display: none;
+}
+
 
 /* --- middle right --- */
 
 .card-info {
-  border: 1px solid darksalmon;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 25%;
+  width: 300px;
 }
 
 .person-card {
   display: flex;
-  border: 1px solid orchid;
   align-items: center;
 
 }
@@ -102,7 +100,6 @@ header {
 }
 
 .person-pic {
-  border: 1px solid burlywood;
   height: 100%;
 }
 
@@ -134,8 +131,77 @@ footer {
   font-weight: 300;
 }
 
-@media screen and (max-width: 930px) {
+#divider {
+  color: grey;
+  display: none;
+  width: 100%;
+  margin-top: 30px;
+}
 
+@media screen and (max-width: 650px) {
 
+  .main-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .leaderboard-arrows {
+    display: block;
+    height: 20px;
+  }
+
+  #leaderboard-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #leaderboard-title {
+    margin: 5px 20px;
+  }
+
+  .leaderboard-nav,
+  .view-routes,
+  .goals,
+  .calendar {
+    display: none;
+  }
+
+  #navigation {
+    width: 300px;
+    margin: 0;
+  }
+
+  .nav-cards {
+    margin: 0;
+  }
+
+  .start-ride {
+    display: flex;
+    background-color: #fe5f55;
+    color: #fff;
+  }
+
+  footer,
+  #logout {
+    display: none;
+  }
+
+  #top-right {
+    width: 30px;
+  }
+
+  #divider {
+    display: inline;
+  }
+
+  .person-card {
+    margin: 10px 0;
+  }
 
 }
