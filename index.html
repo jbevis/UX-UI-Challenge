@@ -3,58 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>Bike Tracker</title>
-    <link rel='stylesheet' type='text/css' href="./styles.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="./normalize.css"/>
+    <link rel='stylesheet' type='text/css' href="./styles.css"/>
+    <link href=“https://fonts.googleapis.com/css?family=Open+Sans:400,300” rel=“stylesheet”>
   </head>
   <body>
     <main class="main">
       <header>
-        <img id="hamburger" />
-        <h1 id="title"></h1>
-        <img id="profile-pic"/>
-        <p>Logout</p>
+        <img id="hamburger" src="./icons/hamburger.png" />
+        <h1 id="title">Bike Tracker</h1>
+        <div id="top-right">
+          <img id="profile-pic" src="./icons/person-icon.png"/>
+          <p id="logout" >Logout</p>
+        <div>
       </header>
       <section class="main-body">
         <section id="navigation">
-          <article class="nav-cards">
-            <h4>Leaderboard</h4>
+          <article class="nav-cards leaderboard-nav">
+            <h2 >Leaderboard</h2>
           </article>
-          <article class="nav-cards">
-            <h4>View Routes</h4>
+          <article class="nav-cards view-routes">
+            <h2>View Routes</h2>
           </article>
-          <article class="nav-cards">
-            <h4>Goals + History</h4>
+          <article class="nav-cards goals">
+            <h2>Goals + History</h2>
           </article>
-          <article class="nav-cards">
-            <h4>Ride Calendar</h4>
+          <article class="nav-cards calendar">
+            <h2>Ride Calendar</h2>
           </article>
         </section>
         <section class="card-info">
-          <h4>Leaderboard</h4>
+          <div id="leaderboard-wrapper">
+            <img class="leaderboard-arrows" src="./icons/back-arrow.svg"/>
+            <h2 id="leaderboard-title">Leaderboard</h2>
+            <img class="leaderboard-arrows" src="./icons/next-arrow.svg"/>
+          </div>
           <article class="person-card">
-            <img class="person-icon"/>
+            <img class="person-pic" src="./icons/person-icon.png"/>
             <div class="person-info">
-              <h5>Alana H.</h5>
-              <p class="route-time">Canyon Looop - 1h 23m</p>
+              <h3 class="card-names">Alana H.</h3>
+              <p class="route-time">Canyon Loop - 1h 23m</p>
             </div>
           </article>
           <article class="person-card">
-            <img class="person-icon"/>
+            <img class="person-pic" src="./icons/person-icon.png"/>
             <div class="person-info">
-              <h5>Timothy J.</h5>
+              <h3 class="card-names">Timothy J.</h3>
               <p class="route-time">Clear Creek - 1h 46m</p>
             </div>
           </article>
           <article class="person-card">
-            <img class="person-icon"/>
+            <img class="person-pic" src="./icons/person-icon.png"/>
             <div class="person-info">
-              <h5>Matt B.</h5>
+              <h3 class="card-names">Matt B.</h3>
               <p class="route-time">City Park Loop - 45m</p>
             </div>
           </article>
           <article class="person-card">
-            <img class="person-icon"/>
+            <img class="person-pic" src="./icons/person-icon.png"/>
             <div class="person-info">
-              <h5>Nathanel D.</h5>
+              <h3 class="card-names">Nathanel D.</h3>
               <p class="route-time">High Arch Trail - 3h 22m</p>
             </div>
           </article>
