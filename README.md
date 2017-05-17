@@ -19,3 +19,8 @@ We approached the project with the mentality that we would create a flexible bas
 ### Reference and Inspiration:
 
 ### Wireframes:
+Desktop
+![Image](bike-desktop.jpg)
+
+Mobile
+![Image](bike-mobile.jpg)
